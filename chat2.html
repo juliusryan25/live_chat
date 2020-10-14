@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+  <style>
+
+  </style>
+</head>
+
+<body>
+
+  <h2>Popup Chat Window</h2>
+
+
+  <a class="open-button" onclick="openForm()"><i class="fas fa-comments fa-5x "></i></a>
+
+  <div class="chat-popup" id="myForm">
+    <form action="#" class="form-container">
+
+      <div class="col-12 header1 border-right border-left border-top border-bottom">
+        <div class="row">
+          <div class="col-9">
+              <img src="image/1.png" class="rounded-circle" width="60px" alt="">
+        Automate.id
+          </div>
+          <div class="col-3 ">
+            <a type="button" class="btn cancel" onclick="closeForm()"><i class="fas fa-times fa-2x"></i></a>
+          </div>
+        </div>
+      
+      </div>
+
+      <div class="col-12 roomchat border-right border-left">
+
+        <div class="row no-gutters">
+          <div class="col-md-12">
+            <div class="chat-bubble chat-bubble--left ">
+              Hello dude!
+            </div>
+          </div>
+
+        </div>
+        <div class="row no-gutters">
+          <div class="col-md-12">
+            <div class="chat-bubble chat-bubble--left">
+              Hello dude!
+            </div>
+          </div>
+
+        </div>
+        <div class="row no-gutters">
+          <div class="col-md-12">
+            <div class="chat-bubble chat-bubble--left">
+              Hello dude!
+            </div>
+          </div>
+
+        </div>
+        <div class="row no-gutters">
+          <div class="col-md-12">
+            <div class="chat-bubble chat-bubble--left">
+              Hello dude!
+            </div>
+          </div>
+
+        </div>
+        <div class="row no-gutters">
+          <div class="col-md-12">
+            <div class="chat-bubble chat-bubble--left">
+              Hello dude!
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="row no-gutters">
+          <div class="col-md-12 ">
+            <div class="chat-bubble chat-bubble--right">
+              <img src="image/1.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 border-left border-bottom border-right footer ">
+        <div class="row">
+          <div class="col-8 ">
+            <input type="text" name="" style="padding: 0%;width: 100%;border-radius: 5px;margin-top: 10px;height: 35px;"  placeholder="Type your message here..." id="">
+          </div>
+          <div class="col-2 ">
+            <button class="btn btn-primary tombol"><i class="far fa-check-circle fa-lg"></i></button>
+          </div>
+          <div class="col-2 ">
+            <span class="settings-tray--right">
+              <div class="image-upload">
+                <label for="file-input">
+                  <i class="fas fa-paperclip fa-7x" style="padding: 15px 8px 8px 8px;" type="file"></i>
+                </label>
+                <input id="file-input" type="file" />
+              </div>
+            </span>
+          </div>
+        </div>
+      </div>
+
+
+
+
+     
+    </form>
+  </div>
+
+  <script>
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+  </script>
+
+</body>
+
+</html>

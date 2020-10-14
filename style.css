@@ -1,0 +1,354 @@
+.container {
+  max-width: 35%;
+  margin: 50px auto;
+}
+
+.header1 {
+  border-radius: 5px 5px 0px 0px;
+}
+
+.roomchat {
+  height: 400px;
+  overflow: auto;
+}
+
+.sidebar1 {
+  border-radius: 5px;
+  height: 70px;
+}
+
+.sidebar {
+  max-height: 500px;
+  overflow: auto;
+  border-radius: 5px;
+}
+
+.footer {
+  border-radius: 5px;
+}
+
+.image-upload > input {
+  display: none;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+  background-color: transparent;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 5px;
+  width: 140px;
+  position: absolute;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  border-radius: 10px;
+  margin-bottom: 2%;
+}
+
+/* Add styles to the form container */
+.form-container {
+  width: 400px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border: transparent;
+  border-radius: 3px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #74b9ff;
+  border-radius: 3px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #74b9ff;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  width: 75%;
+  margin-top: 10%;
+  float: right;
+}
+
+.form-container .cancel i:hover {
+  color: #74b9ff;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+.tombol {
+  margin-top: 10px;
+  padding: 0%;
+  height: 35px;
+  width: 100%;
+}
+
+.profile-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 40px;
+}
+
+.settings-tray {
+  background: #eee;
+  padding: 10px 15px;
+  border-radius: 7px;
+  margin-bottom: 5%;
+}
+
+.settings-tray .no-gutters {
+  padding: 0;
+}
+
+.settings-tray--right {
+  float: right;
+  padding-right: 0px;
+}
+
+.settings-tray--right i {
+  margin-top: 0px;
+  font-size: 25px;
+  color: grey;
+  margin-left: 0px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.settings-tray--right i:hover {
+  color: #74b9ff;
+  cursor: pointer;
+}
+
+.search-box {
+  background: #fafafa;
+  padding: 10px 13px;
+}
+
+.search-box .input-wrapper {
+  background: #fff;
+  border-radius: 40px;
+}
+
+.search-box .input-wrapper i {
+  color: grey;
+  margin-left: 7px;
+  vertical-align: middle;
+}
+
+input {
+  border: none;
+  border-radius: 30px;
+  width: 250px;
+}
+
+input::-webkit-input-placeholder {
+  color: #e3e3e3;
+  font-weight: 300;
+  margin-left: 20px;
+}
+
+input:-ms-input-placeholder {
+  color: #e3e3e3;
+  font-weight: 300;
+  margin-left: 20px;
+}
+
+input::-ms-input-placeholder {
+  color: #e3e3e3;
+  font-weight: 300;
+  margin-left: 20px;
+}
+
+input::placeholder {
+  color: #e3e3e3;
+  font-weight: 300;
+  margin-left: 20px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.friend-drawer {
+  margin-top: 10px;
+  padding: 10px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  vertical-align: baseline;
+  background: #fff;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  max-height: 593px;
+  overflow: auto;
+  border-radius: 5px;
+}
+
+.friend-drawer--grey {
+  background: #eee;
+}
+
+.friend-drawer .text {
+  margin-left: 12px;
+  width: 70%;
+}
+
+.friend-drawer .text h6 {
+  margin-top: 6px;
+  margin-bottom: 0;
+}
+
+.friend-drawer .text p {
+  margin: 0;
+}
+
+.friend-drawer .time {
+  color: grey;
+}
+
+.friend-drawer--onhover:hover {
+  background: #74b9ff;
+  cursor: pointer;
+}
+
+.friend-drawer--onhover:hover p,
+.friend-drawer--onhover:hover h6,
+.friend-drawer--onhover:hover .time {
+  color: #fff !important;
+}
+
+hr {
+  margin: 5px auto;
+  width: 60%;
+}
+
+.chat-bubble {
+  padding: 10px 14px;
+  background: #eee;
+  margin: 10px 30px;
+  border-radius: 9px;
+  position: relative;
+  -webkit-animation: fadeIn 1s ease-in;
+          animation: fadeIn 1s ease-in;
+}
+
+.chat-bubble:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-bottom: 0;
+  margin-top: -10px;
+}
+
+.chat-bubble--left {
+  background: #74b9ff;
+}
+
+.chat-bubble--left:after {
+  left: 0;
+  border-right-color: #74b9ff;
+  border-left: 0;
+  margin-left: -20px;
+}
+
+.chat-bubble--right:after {
+  right: 0;
+  border-left-color: #eee;
+  border-right: 0;
+  margin-right: -20px;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.offset-md-9 .chat-bubble {
+  background: #74b9ff;
+  color: #fff;
+}
+
+.chat-box-tray {
+  background: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  padding: 10px 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  bottom: 0;
+}
+
+.chat-box-tray input {
+  margin: 0 10px;
+  padding: 6px 2px;
+  border-radius: 5px;
+}
+
+.chat-box-tray i {
+  color: grey;
+  font-size: 30px;
+  vertical-align: middle;
+}
+
+.chat-box-tray i:last-of-type {
+  margin-left: 25px;
+}
+/*# sourceMappingURL=style.css.map */
