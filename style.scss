@@ -1,5 +1,38 @@
 $blue: #74b9ff;
 
+@-webkit-keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      -webkit-transform: translateY(40px);
+  }
+  100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes fadeInLeft {
+  0% {
+      opacity: 0;
+      -webkit-transform: translateX(80px);
+  }
+  100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+      opacity: 0;
+      transform: translateY(-40px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
 .container{
     max-width: 35%;
     margin:50px auto;
@@ -21,7 +54,7 @@ $blue: #74b9ff;
     border-radius: 5px;
 }
 .footer{
-    border-radius: 5px;
+    border-radius: 0px 0px 5px 5px;
 }
 .image-upload>input {
     display: none;
@@ -31,16 +64,17 @@ $blue: #74b9ff;
   
   /* Button used to open the chat form - fixed at the bottom of the page */
   .open-button {
-    background-color:transparent;
+    background-color:#00008B;
     color: white;
-    padding: 16px 20px;
+    padding: 10px 10px;
+    border-radius: 30px 10px 30px 30px;
     border: none;
     cursor: pointer;
     opacity: 0.8;
-    position: fixed;
+    // position: fixed;
     bottom: 23px;
-    right: 5px;
-    width: 140px;
+    right: 50px;
+    width: 100px;
     position: absolute;
   }
   
@@ -50,10 +84,16 @@ $blue: #74b9ff;
     position: fixed;
     bottom: 0;
     right: 15px;
-    border: 3px solid #f1f1f1;
+    // border: 3px solid #f1f1f1;
     z-index: 9;
-    border-radius: 10px;
+    border-radius: 5px;
     margin-bottom: 2%;
+    box-shadow:  1px 1px 7px 5px grey;
+    -webkit-animation: fadeInUp 500ms ease-in-out; /* Chrome, Safari, Opera */
+    animation: fadeInUp 500ms ease-in-out;
+    -webkit-animation: fadeInLeft 500ms ease-in-out; /* Chrome, Safari, Opera */
+    animation: fadeInLeft 500ms ease-in-out;
+    
   }
   
   /* Add styles to the form container */
@@ -61,13 +101,15 @@ $blue: #74b9ff;
     width: 400px;
     padding: 10px;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 5px;
+    -webkit-animation: fadeInUp 500ms ease-in-out; /* Chrome, Safari, Opera */
+    animation: fadeInUp 500ms ease-in-out;
     
   }
   
   /* width */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 5px;
   
 
 }
@@ -83,14 +125,14 @@ $blue: #74b9ff;
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: $blue; 
+  background: #eee; 
   border-radius: 3px;
   
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: $blue; 
+  background: #eee; 
   
 }
   
@@ -241,26 +283,20 @@ hr {
 .chat-bubble {
   padding: 10px 14px;
   background: #eee;
-  margin: 10px 30px;
+  margin: 3px 20px;
   border-radius: 9px;
   position: relative;
   animation: fadeIn 1s ease-in;
   
-  &:after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    width: 0;
-    height: 0;
-    border: 20px solid transparent;
-    border-bottom: 0;
-    margin-top: -10px;
-  }
+
   
   &--left {
-    background: $blue;
+    background: #eee;
+    border-radius: 5px 20px 20px 20px;
+    margin-top: 2%;
      &:after {
       left: 0;
+      // border-radius: 9px 9px;
       border-right-color:$blue ;
 	    border-left: 0;
       margin-left: -20px;
@@ -268,7 +304,10 @@ hr {
   }
   
   &--right {
-    
+    border-radius: 20px 5px 20px 20px;
+    margin-top: 2%;
+    background: #00008B;
+    color: white;
     &:after {
       right: 0;
       border-left-color: #eee;
@@ -276,6 +315,21 @@ hr {
       margin-right: -20px;
     }
   }
+}
+.user{
+  float: right;
+}
+.time-right{
+  float: right;
+  margin-right: 10%;
+  font-size: 10px;
+  color: grey;
+}
+.time-left{
+  float: left;
+  margin-left: 10%;
+  font-size: 10px;
+  color: grey;
 }
 
 @keyframes fadeIn {
