@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
 
   <style>
 
@@ -19,151 +20,319 @@
   <h2>Popup Chat Window</h2>
 
 
-  <button class="open-button"  onclick="openForm()"><i class="fas fa-comments fa-3x "></i></button>
+  <button class="open-button " id="open" onclick="openForm1()"><i class="fas fa-comments fa-3x "></i></button>
 
-  <div class="chat-popup" id="myForm">
-    <form action="#" class="form-container">
-
-      <div class="col-12 header1 border-right border-left border-top border-bottom">
-        <div class="row">
-          <div class="col-9">
-              <img src="image/1.png" class="rounded-circle" width="60px" alt="">
-        Automate.id
-          </div>
-          <div class="col-3 ">
-            <a type="button" class="btn cancel" onclick="closeForm()"><i class="fas fa-times fa-2x"></i></a>
-          </div>
+  <div class="chat-popup" id="menu">
+    <form action="#" class="form-container1">
+      <div class="row">
+        <div class="col-12">
+          <button class="posisi" onclick="closeForm2()"><i class="fas fa-times "></i></button>
         </div>
-      
-      </div>
-
-      <div class="col-12 roomchat border-right border-left">
-
-        <div class="row no-gutters">
-          <div class="col-md-12">
-            <img src="image/1.png" class="rounded-circle" width=30px" alt="">   
-            <b>Admin</b>         
-            <div class="chat-bubble chat-bubble--left ">
-              Hello dude!
+        <div class="col-12  main">
+          <div class="row">
+            <div class="col-12  header">
+              <img src="image/fres.png" width="40px" alt="">
+              <bold style="font-family: 'Noto Sans JP', sans-serif;">freschat</bold>
             </div>
-            <p class="time-left">Wed, 10:31 AM</p>
           </div>
-
-        </div>
-        <div class="row no-gutters">
-          <div class="col-md-12">
-            <img src="image/1.png" class="rounded-circle" width=30px" alt="">   
-            <b>Admin</b>    
-            <div class="chat-bubble chat-bubble--left">
-              Hello dude!
-            </div>
-            <p class="time-left">Wed, 10:31 AM</p>
-          </div>
-
-        </div>
-        <div class="row no-gutters">
-          <div class="col-md-12">
-            <img src="image/1.png" class="rounded-circle" width=30px" alt="">   
-            <b>Admin</b>    
-            <div class="chat-bubble chat-bubble--left">
-              Hello dude!
-            </div>
-            <p class="time-left">Wed, 10:31 AM</p>
-          </div>
-
-        </div>
-        <div class="row no-gutters">
-          <div class="col-md-12">
-            <img src="image/1.png" class="rounded-circle" width=30px" alt="">   
-            <b>Admin</b>    
-            <div class="chat-bubble chat-bubble--left">
-              Hello dude!
-            </div>
-            <p class="time-left">Wed, 10:31 AM</p>
-          </div>
-
-        </div>
-        <div class="row no-gutters">
-          <div class="col-md-12">
-            <img src="image/1.png" class="rounded-circle" width=30px" alt="">   
-            <b>Admin</b>    
-            <div class="chat-bubble chat-bubble--left">
-              Hello dude!
-            </div>
-            <p class="time-left">Wed, 10:31 AM</p>
-          </div>
-
-        </div>
-
-
-        <div class="row no-gutters">
-          <div class="col-md-12 ">
-            <b style="padding-left:79% ;">User</b>
-            <img src="image/1.png" class="rounded-circle user" width=30px" alt="">
-            <div class="chat-bubble chat-bubble--right">
-            jhagdajsdg
-            </div>
-            <p class="time-right">Wed, 10:31 AM</p>
-          </div>
-        </div>
-        <div class="row no-gutters">
-          <div class="col-md-12 ">
-            <img src="image/1.png" class="rounded-circle user" width=30px" alt="">
-            <b style="padding-left:79% ;">User</b>
-            <div class="chat-bubble chat-bubble--right">
-              <img src="image/1.png" alt="">
-            </div>
-            <p class="time-right">Wed, 10:31 AM</p>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="col-12 border-left border-bottom border-right footer ">
-        <div class="row">
-          <div class="col-8 ">
-            <input type="text" name="" style="padding: 0%;width: 100%;border-radius: 5px;margin-top: 10px;height: 35px;"  placeholder="Type your message here..." id="">
-          </div>
-          
-          <div class="col-2 ">
-            <span class="settings-tray--right">
-              <div class="image-upload">
-                
-                  <i class="far fa-grin fa-7x" style="padding: 15px 8px 8px 8px;"></i>                  
-           
+          <div class="row">
+            <div class="col-11 content-head">
+              <div class="row">
+                <div class="col-12">
+                  <b>Message Us</b></p>
+                </div>
               </div>
-            </span>
-          </div>
-
-          <div class="col-2 ">
-            <span class="settings-tray--right">
-              <div class="image-upload">
-                <label for="file-input">
-                  <i class="fas fa-paperclip fa-7x" style="padding: 15px 8px 8px 8px;" type="file"></i>
-                </label>
-                <input id="file-input" type="file" />
+              <div class="row">
+                <hr>
               </div>
-            </span>
+
+              <div class="row">
+                <div class="col-12 ">
+                  <div class="row  buttonchat" onclick="openForm2()">
+                    <div class="col-2">
+                      <i class="fas fa-headset fa-2x icon"></i>
+                    </div>
+                    <div class="col-6">
+                      <p class="title">
+                        <b>Help</b><br>hi
+                      </p>
+                    </div>
+                    <div class="col-4">
+                      <p class="lastchat">11:39 AM</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-11  content-head2">
+              <div class="row">
+                <div class="col-12">
+                  <b>FAQs</b>
+                  <button class="search"> <i class="fas fa-search"></i></button>
+                </div>
+              </div>
+              <div class="row">
+                <hr>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <div class="row  buttonchat">
+                    <div class="col-2">
+                      <i style="font-size: 25px;" class="fas fa-tags fa-2x "></i>
+                    </div>
+                    <div class="col-6">
+                      <p class="title">
+                        <b>Pricing Plan</b>
+                        <br>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <hr>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <div class="row  buttonchat">
+                    <div class="col-2">
+                      <i style="font-size: 25px;" class="fas fa-balance-scale-right fa-2x"></i>
+                    </div>
+                    <div class="col-6">
+                      <p class="title">
+                        <b>Comparisons</b>
+                        <br>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-
-
-
-
-     
     </form>
   </div>
 
-  <script>
-    function openForm() {
-      document.getElementById("myForm").style.display = "block";
-    }
+  <div class="chat-popup" id="myForm">
+    <form action="#" class="form-container1">
+      <div class="row">
+        <div class="col-12">
+          <button class="posisi" onclick="closeForm()"><i class="fas fa-times "></i></button>
+        </div>
+        <div class="col-12 main2">
+          <div class="row ">
+            <div class="col-12  header">
+              <div class="row">
+                <div class="col-2 back">
+                  <button class="kembali" onclick="back()"><i class="fas fa-chevron-left"></i></button>
+                </div>
+                <div class="col-10 back2 ">
+                  <b>
+                    <b class="judul">Help</b>
+                    <br>
+                    <span class="timeonline">Currently replying in under 7 minutes</span>
+                  </b>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-11 content-head2">
+              <div class="col-12 header1 ">
+                <div class="row">
+                  <div class="col-12">
+                    <img src="image/1.png" class="imageadmin" width="40px" alt="">
+                    Automate.id
+                  </div>
 
-    function closeForm() {
-      document.getElementById("myForm").style.display = "none";
-    }
-  </script>
+                </div>
+
+              </div>
+
+              <div class="col-12 roomchat">
+
+                <div class="row no-gutters">
+                  <div class="col-md-12">
+                    <div class="row">
+                      <div class="col-2 ">
+                        <img src="image/1.png" class="rounded-circle " style="margin-top: 25px;margin-left: 15 px;"
+                          width=30px" alt="">
+                      </div>
+                      <div class="col-10 " style="padding-left: 0px;">
+                        <b style="font-size: 13px;">Admin</b>
+                        <br>
+                        <div class="chat-bubble chat-bubble--left">
+                          Hello dude!
+                        </div>
+                      </div>
+                    </div>
+                    <p class="time-left">Wed, 10:31 AM</p>
+                  </div>
+                </div>
+                <div class="row no-gutters">
+                  <div class="col-md-12">
+                    <div class="row">
+                      <div class="col-2 ">
+                        <img src="image/1.png" class="rounded-circle " style="margin-top: 25px;margin-left: 15 px;"
+                          width=30px" alt="">
+                      </div>
+                      <div class="col-10 " style="padding-left: 0px;">
+                        <b style="font-size: 13px;">Admin</b>
+                        <br>
+                        <div class="chat-bubble chat-bubble--left">
+                          Hello dude!
+                        </div>
+                      </div>
+                    </div>
+                    <p class="time-left">Wed, 10:31 AM</p>
+                  </div>
+                </div>
+                <div class="row no-gutters">
+                  <div class="col-md-12">
+                    <div class="row">
+                      <div class="col-2 ">
+                        <img src="image/1.png" class="rounded-circle " style="margin-top: 25px;margin-left: 15 px;"
+                          width=30px" alt="">
+                      </div>
+                      <div class="col-10 " style="padding-left: 0px;">
+                        <b style="font-size: 13px;">Admin</b>
+                          <br>
+                        <div class="chat-bubble chat-bubble--left">
+                          Hello dude!
+                        </div>
+                      </div>
+                    </div>
+                    <p class="time-left">Wed, 10:31 AM</p>
+                  </div>
+                </div>
+
+                   <div class="row no-gutters">
+                  <div class="col-md-12">
+                    <div class="row">
+                      <div class="col-2 ">
+                        <img src="image/1.png" class="rounded-circle " style="margin-top: 25px;margin-left: 15 px;"
+                          width=30px" alt="">
+                      </div>
+                      <div class="col-10 " style="padding-left: 0px;">
+                        <b style="font-size: 13px;">Admin</b>
+                        <br>
+                        <div class="chat-bubble chat-bubble--left">
+                          Hello dude!
+                        </div>
+                      </div>
+                    </div>
+                    <p class="time-left">Wed, 10:31 AM</p>
+                  </div>
+                </div>
+                
+                <div class="row no-gutters">
+                  <div class="col-md-12">
+                    <div class="row">
+                      <div class="col-2 ">
+                        <img src="image/1.png" class="rounded-circle " style="margin-top: 25px;margin-left: 15 px;"
+                          width=30px" alt="">
+                      </div>
+                      <div class="col-10 " style="padding-left: 0px;">
+                        <b style="font-size: 13px;">Admin</b>
+                        <br>
+                        <div class="chat-bubble chat-bubble--left">
+                          Hello dude!
+                        </div>
+                      </div>
+                    </div>
+                    <p class="time-left">Wed, 10:31 AM</p>
+                  </div>
+                </div>
+
+
+                <div class="row no-gutters">
+                  <div class="col-md-12 ">            
+                      <div class="row">
+                        <div class="col-12">
+                          <b style="float: right;margin-right: 2%;">User</b>
+                        </div>
+                      </div>                           
+                    <div class="row " >
+                      <div class="col-12">
+                        <div class="chat-bubble chat-bubble--right">
+                          jhagdajsdg
+                        </div>
+                      </div>                     
+                    </div>
+                    <div class="row">
+                      <div class="col-12">
+                        <p class="time-right">Wed, 10:31 AM</p>
+                      </div> 
+                    </div>                       
+                  </div>
+                </div>
+                
+                <div class="row no-gutters">
+                  <div class="col-md-12 ">            
+                      <div class="row">
+                        <div class="col-12">
+                          <b style="float: right;margin-right: 2%;">User</b>
+                        </div>
+                      </div>                           
+                    <div class="row " >
+                      <div class="col-12">
+                        <div class="chat-bubble chat-bubble--right">
+                        <img src="image/1.png" alt="">
+                        </div>
+                      </div>                     
+                    </div>
+                    <div class="row">
+                      <div class="col-12">
+                        <p class="time-right">Wed, 10:31 AM</p>
+                      </div> 
+                    </div>                       
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+        </div>
+        <div class="col-12 footer ">
+          <div class="row">
+            <div class="col-8 ">
+              <input type="text" name=""
+                style="padding: 0%;width: 100%;border-radius: 5px;margin-top: 10px;height: 35px;"
+                placeholder="Type your message here..." id="">
+            </div>
+
+            <div class="col-2 ">
+              <span class="settings-tray--right">
+                <div class="image-upload">
+                  <label for="file-input">
+                    <i class="fas fa-paperclip fa-7x" style="padding: 15px 8px 8px 8px;" type="file"></i>
+                  </label>
+                  <input id="file-input" type="file" />
+                </div>
+              </span>
+            </div>
+
+            <div class="col-2 ">
+              <span class="settings-tray--right">
+                <div class="image-upload">
+
+                  <i class="far fa-grin fa-7x" style="padding: 15px 8px 8px 8px;"></i>
+
+                </div>
+              </span>
+            </div>
+          </div>
+    </form>
+  </div>
+
+
+
+  <script src="js.js"></script>
 
 </body>
 
