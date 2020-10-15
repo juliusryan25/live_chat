@@ -103,9 +103,8 @@ body {
   right: 50px;
   width: 100px;
   position: absolute;
-  -webkit-animation: fadeInUp2 500ms ease-in-out;
-  /* Chrome, Safari, Opera */
-  animation: fadeInUp2 500ms ease-in-out;
+  -webkit-animation: fadeIn 400ms ease-in;
+          animation: fadeIn 400ms ease-in;
 }
 
 /* The popup chat - hidden by default */

@@ -94,9 +94,10 @@ body {
   right: 50px;
   width: 100px;
   position: absolute;
-  -webkit-animation: fadeInUp2 500ms ease-in-out;
-  /* Chrome, Safari, Opera */
-  animation: fadeInUp2 500ms ease-in-out;
+  animation: fadeIn 400ms ease-in;
+  // -webkit-animation: fadeInUp2 500ms ease-in-out;
+  // /* Chrome, Safari, Opera */
+  // animation: fadeInUp2 500ms ease-in-out;
 }
 
 /* The popup chat - hidden by default */
