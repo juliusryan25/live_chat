@@ -64,7 +64,7 @@ $blue: #74b9ff;
   width: 10px;
   border-radius: 0px 0px 5px 5px;
   background: white;
-  box-shadow: 1px 1px 7px 5px grey;
+  box-shadow: 1px 1px 7px 5px #DCDCDC;
 
 }
 
@@ -211,7 +211,7 @@ input {
   width: 250px;
 
   &::placeholder {
-    color: #e3e3e3;
+    color: #DCDCDC;
     font-weight: 300;
     margin-left: 20px;
   }
@@ -291,6 +291,10 @@ hr {
   margin-right: 2%;
   font-size: 10px;
   color: grey;
+  opacity: 0%;
+}
+.time-right:hover{
+  opacity: 100%;
 }
 
 .time-left {
@@ -298,6 +302,10 @@ hr {
   margin-left: 14%;
   font-size: 10px;
   color: grey;
+  opacity: 0%;
+}
+.time-left:hover{
+  opacity: 100%;
 }
 
 @keyframes fadeIn {
@@ -311,12 +319,7 @@ hr {
 }
 
 
-.offset-md-9 {
-  .chat-bubble {
-    background: $blue;
-    color: #fff;
-  }
-}
+
 
 
 .header {
@@ -334,14 +337,14 @@ hr {
   height: 500px;
   border-radius: 7px;
   background: #eee;
-  box-shadow: 1px 1px 6px 5px grey;
+  box-shadow: 1px 1px 6px 5px #DCDCDC;
 }
 
 .main2 {
   width: 300px;
   height: 470px;
   background: #eee;
-  box-shadow: 1px 1px 6px 5px grey;
+  box-shadow: 1px 1px 6px 5px #DCDCDC;
   border-radius: 7px 7px 0px 0px;
 }
 
@@ -390,7 +393,7 @@ hr {
 .content-head2 {
   bottom: 30px;
   margin-left: 15px;
-  max-height: 600px;
+  max-height: 590px;
   border-radius: 10px;
   border-top: 10px #000000;
   margin-top: 2%;
@@ -406,7 +409,6 @@ hr {
 
 .buttonchat {
 
-
   background: transparent;
   border: transparent;
   padding-bottom: 0px;
@@ -415,11 +417,24 @@ hr {
   height: 90%;
   width: 100%;
   border-radius: 10px;
-  margin: auto;
+  margin: auto 10px;
+
+}
+.buttonchat1 {
+
+  background: transparent;
+  border: transparent;
+  padding-bottom: 0px;
+  padding-top: 5px;
+  cursor: pointer;
+  height: 60px;
+  width: 95%;
+  border-radius: 10px;
+  margin: auto ;
 
 }
 
-.buttonchat:hover {
+.buttonchat:hover ,.buttonchat1:hover {
   background: #eee;
   opacity: 100%;
 }
@@ -444,12 +459,19 @@ hr {
 .icon {
   float: left;
   font-size: 25px;
-
+  padding-left: 10px;
+  padding-top: 7px;
   padding-bottom: 10px;
+}
+
+.title-chat {
+  float: left;
+  margin-left: 10%;
 }
 
 .title {
   float: left;
+  margin-left: 15%;
 }
 
 .lastchat {
