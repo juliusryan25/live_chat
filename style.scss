@@ -293,7 +293,8 @@ hr {
   color: grey;
   opacity: 0%;
 }
-.time-right:hover{
+
+.time-right:hover {
   opacity: 100%;
 }
 
@@ -304,7 +305,8 @@ hr {
   color: grey;
   opacity: 0%;
 }
-.time-left:hover{
+
+.time-left:hover {
   opacity: 100%;
 }
 
@@ -333,8 +335,8 @@ hr {
 }
 
 .main {
-  width: 300px;
-  height: 500px;
+  width: 330px;
+  height: 526px;
   border-radius: 7px;
   background: #eee;
   box-shadow: 1px 1px 6px 5px #DCDCDC;
@@ -351,7 +353,7 @@ hr {
 .imageadmin {
 
   border-radius: 50%;
-  margin-bottom: 4%;
+  margin-bottom: 3%;
 }
 
 .posisi {
@@ -387,6 +389,7 @@ hr {
   -webkit-animation: fadeInUp 500ms ease-in-out;
   /* Chrome, Safari, Opera */
   animation: fadeInUp 500ms ease-in-out;
+  box-shadow: 1px 2px 7px  grey;
 
 }
 
@@ -403,6 +406,8 @@ hr {
   -webkit-animation: fadeInUp 500ms ease-in-out;
   /* Chrome, Safari, Opera */
   animation: fadeInUp 500ms ease-in-out;
+  box-shadow: 1px 2px 7px  grey;
+  
 
 
 }
@@ -412,7 +417,7 @@ hr {
   background: transparent;
   border: transparent;
   padding-bottom: 0px;
-  padding-top: 5px;
+  padding-top: 5%;
   cursor: pointer;
   height: 90%;
   width: 100%;
@@ -420,6 +425,7 @@ hr {
   margin: auto 10px;
 
 }
+
 .buttonchat1 {
 
   background: transparent;
@@ -430,11 +436,12 @@ hr {
   height: 60px;
   width: 95%;
   border-radius: 10px;
-  margin: auto ;
+  margin: auto;
 
 }
 
-.buttonchat:hover ,.buttonchat1:hover {
+.buttonchat:hover,
+.buttonchat1:hover {
   background: #eee;
   opacity: 100%;
 }
@@ -460,8 +467,17 @@ hr {
   float: left;
   font-size: 25px;
   padding-left: 10px;
-  padding-top: 7px;
+  padding-top: 5px;
   padding-bottom: 10px;
+}
+
+.lastday {
+
+
+
+  hr {
+    margin-top: 15%;
+  }
 }
 
 .title-chat {
