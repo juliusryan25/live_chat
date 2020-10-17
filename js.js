@@ -11,18 +11,13 @@
       document.getElementById("myForm").style.display = "block";
       document.getElementById("myForm").style.animation = "none";
       document.getElementById("menu").style.display = "none";
-      document.getElementById("menu").style.animation = "-webkit-animation: fadeInUp 500ms ease-in-out; fadeInUp 500ms ease-in-out;";
+      // document.getElementById("menu").style.animation = "-webkit-animation: fadeInUp 500ms ease-in-out; fadeInUp 500ms ease-in-out;";
     }
-    function openkategori1() {
-      document.getElementById("Kategori1").style.display = "block";
-      document.getElementById("myForm").style.animation = "none";
-      document.getElementById("myForm").style.display = "none";
-      document.getElementById("menu").style.display = "none";
-     
-    }
+   
 
     function back() {
       document.getElementById("menu").style.display = "block";
+      document.getElementById("menu").style.animation = "none";
       document.getElementById("myForm").style.display = "none";
       document.getElementById("open").style.display = "none";
     }
@@ -31,7 +26,7 @@
       document.getElementById("myForm").style.display = "none";
       document.getElementById("open").style.display = "block";
       document.getElementById("menu").style.display = "none";
-      document.getElementById("menu").style.animation = "-webkit-animation: fadeInUp 500ms ease-in-out; fadeInUp 500ms ease-in-out;";
+      document.getElementById("menu").style.animation = "none;";
       
     }
 
